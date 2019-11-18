@@ -1,0 +1,16 @@
+def AscendingOrder(InputArray):
+   for i in range(1,len(InputArray)):
+
+     current = InputArray[i]
+     j = i
+
+     while j>0 and InputArray[j-1]>current:
+         InputArray[j]=InputArray[j-1]
+         j = j-1
+
+     InputArray[j]=current
+
+InputArray = [14,46,43,27,57,41,45,21,70]
+AscendingOrder(InputArray)
+print(InputArray)
+
